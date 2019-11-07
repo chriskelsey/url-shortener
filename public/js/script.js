@@ -10,7 +10,7 @@ $('button').on('click', function(e) {
 		urlObj.url = newUrl;
 		$.post('/newUrl', urlObj)
 		 .done(function(data){
-		 	$('form').after('<div class="short"><h2>Your Shortened URL is: </h2><p>http:localhost:9000/'+data._id+'</p></div>');
+		 	$('form').after('<div class="short"><h2>Your Shortened URL is: </h2><p>'+window.location.protocol + '//' + window.location.host + '/'+data._id+'</p></div>');
 		 });
 	}
 	e.preventDefault();
