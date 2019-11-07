@@ -6,7 +6,6 @@ mongoose.connect('mongodb://localhost/urlShortener');
 const urlSeed = [
   {
     url: "https://chriskelsey.net",
-    code: 1
   }
 ];
 
