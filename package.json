@@ -1,0 +1,15 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "A simple url shortener.",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Christopher Kelsey",
+  "license": "ISC"
+}
