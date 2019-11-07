@@ -1,3 +1,5 @@
+//Seed file to start DB and test returns
+
 const mongoose = require('mongoose');
 const db = require('../models');
 
