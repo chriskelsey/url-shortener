@@ -5,7 +5,10 @@ $('button').on('click', function(e) {
 		$('.errorMessage').show();
 	} else {
 		urlObj.url = newUrl;
-		$.post('/api/newUrl', urlObj);
+		$.post('/newUrl', urlObj)
+		 .done(function(data){
+		 	$('form').after('<h2>Your Shortened URL is: </h2><p>http:localhost:9000/'+data._id+'</p>');
+		 });
 	}
 	e.preventDefault();
 });

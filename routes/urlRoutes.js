@@ -8,7 +8,7 @@ module.exports = function(app) {
   	});
 
   	//trigger the url write
-  	app.post('/api/newUrl', function(req,res) {
+  	app.post('/newUrl', function(req,res) {
   		db.Url
   			.findOneAndUpdate(
   				{url: req.body.url},
