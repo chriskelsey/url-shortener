@@ -12,9 +12,9 @@ app.use(express.static("public"));
 
 // Configure mongoose to connect to the Mongo DB
 mongoose.Promise = global.Promise
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/urlShortener", { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/urlShortener', { useNewUrlParser: true });
 
-//app.use(routes);
+app.use(express.static('public'));
 
 app.listen(PORT, () => {
 	console.log(`Listening on ${PORT}`);

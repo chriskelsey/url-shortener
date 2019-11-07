@@ -1,11 +1,15 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const URlSchema = new Schema({
+const UrlSchema = new Schema({
   url: {
     type: String,
     required: true
-  }
+  },
+  	code: {
+  	type: Number,
+  	required: true
+  } 
 });
 
 const Url = mongoose.model("Url", UrlSchema);
